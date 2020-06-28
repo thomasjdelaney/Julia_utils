@@ -8,7 +8,7 @@ Returns:    array, same length as x
 
 source: https://stackoverflow.com/questions/34406691/how-to-add-a-column-of-simple-moving-average-of-another-column-to-a-julia-data-f
 """
-function ma(x::Array{T, 1}, window::Int) where {T <: Real}
+function ma(x, window::Int)
   length_x = length(x)
   moving_average = zeros(Float64, length_x)
   for i in 1:length_x
