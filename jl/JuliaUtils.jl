@@ -1,6 +1,7 @@
 module JuliaUtils
 
 using FFTW
+using Statistics
 
 export countUnique,
   getPowerSpectrum,
